@@ -79,6 +79,6 @@ main {
 
 .course.approved {
   background: var(--approved);
-  color: white;
+  color: pink;
   border-color: var(--pink-dark);
 }

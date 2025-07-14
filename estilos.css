@@ -1,0 +1,84 @@
+:root {
+  --pink-bg: #fff0f6;
+  --pink-card: #ffb6c1;
+  --pink-border: #ff69b4;
+  --pink-dark: #d63384;
+  --gray-light: #eaeaea;
+  --approved: #f78fbc;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--pink-bg);
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background: var(--pink-card);
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.semester {
+  flex: 1 1 250px;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid var(--pink-border);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.semester h2 {
+  text-align: center;
+  color: var(--pink-dark);
+  margin-top: 0;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.course {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  background: var(--pink-card);
+  border: 2px solid var(--pink-border);
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.course:hover:not(.locked) {
+  transform: scale(1.05);
+}
+
+.course.locked {
+  background: var(--gray-light);
+  color: #aaa;
+  cursor: not-allowed;
+  border-style: dashed;
+}
+
+.course.approved {
+  background: var(--approved);
+  color: white;
+  border-color: var(--pink-dark);
+}

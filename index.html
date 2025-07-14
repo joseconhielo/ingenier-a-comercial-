@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular Interactiva</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<script src="script.js"></script>
+
+  <header>
+    <h1>Malla Curricular Interactiva</h1>
+    <p>Haz clic en cada ramo para marcarlo como aprobado. Al aprobar un ramo, se desbloquean los cursos que lo requieren.</p>
+  </header>
+
+  <main>
+    <!-- SEMESTRE 1 -->
+    <div class="semester">
+      <h2>Primer semestre</h2>
+      <div class="courses">
+        <div class="course" data-id="core1" data-unlocks="core2">CORE: Civilización Contemporánea I</div>
+        <div class="course" data-id="mat1" data-unlocks="mat2">Matemáticas Avanzadas I</div>
+        <div class="course" data-id="rqcd1" data-unlocks="rqcd2,ds">Razonamiento Cuantitativo con Datos I</div>
+        <div class="course" data-id="micro1" data-unlocks="micro2">Introducción a la Microeconomía</div>
+        <div class="course" data-id="management" data-unlocks="emprende,personas,conta">Management</div>
+      </div>
+    </div>
+
+    <!-- SEMESTRE 2 -->
+    <div class="semester">
+      <h2>Segundo semestre</h2>
+      <div class="courses">
+        <div class="course locked" data-id="core2" data-unlocks="core3,hist,core4,filo,etica,ciencias,corecien,arte">CORE: Civilización Contemporánea II</div>
+        <div class="course">CORE: Escritura Argumentativa</div>
+        <div class="course locked" data-id="mat2">Matemáticas Avanzadas II</div>
+        <div class="course locked" data-id="rqcd2" data-unlocks="ds">Razonamiento Cuantitativo con Datos II</div>
+        <div class="course">Introducción a la Macroeconomía</div>
+        <div class="course locked" data-id="emprende">Taller de Emprendimiento Tecnológico y Sustentable</div>
+        <div class="course">Práctica Profesional</div>
+      </div>
+    </div>
+
+    <!-- SEMESTRE 3 -->
+    <div class="semester">
+      <h2>Tercer semestre</h2>
+      <div class="courses">
+        <div class="course locked" data-id="core3">CORE: Literatura y Humanidades I</div>
+        <div class="course locked" data-id="hist">Electivo Historia</div>
+        <div class="course locked" data-id="micro2">Microeconomía</div>
+        <div class="course locked" data-id="ds">Estadísticas y Data Science</div>
+        <div class="course locked" data-id="personas">Personas y Organizaciones</div>
+        <div class="course">Taller de Introducción a los Negocios</div>
+      </div>
+    </div>
+
+    <!-- SEMESTRE 4 -->
+    <div class="semester">
+      <h2>Cuarto semestre</h2>
+      <div class="courses">
+        <div class="course locked" data-id="core4">CORE: Literatura y Humanidades II</div>
+        <div class="course locked" data-id="filo">Disciplinar Filosofía</div>
+        <div class="course">Psicología Social</div>
+        <div class="course">Organización Industrial</
